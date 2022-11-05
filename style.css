@@ -1,0 +1,83 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 65vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.btns button {
+    height: 35px;
+    width: 125px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0;
+}
+
+#circle {
+    width: 150px;
+    height: 150px;
+    background-color: #c96dc9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sq {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+}
+
+.cir{
+    height: 110px;
+    width: 110px;
+    background-color: white;
+    border-radius: 50%;
+}
+.tri {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(255, 255, 255);
+    margin-top: -20px;
+}
+.poly{
+    position: relative;
+    height:100px;
+    width:50%;
+    color: white;
+    background: rgb(255, 255, 255);
+    padding-bottom: 15%;
+    overflow:hidden;
+    background-clip: content-box;
+    margin-top: 15px;
+  }
+  .poly:after {
+    content: "";
+    position: absolute;
+    top:100px;
+    left: 0;
+    background-color:rgb(255, 255, 255);
+    padding-bottom: 50%;
+    width: 57.7%;
+    transform-origin: 0 0;
+    transform: rotate(-30deg) skewX(30deg);
+  }
